@@ -17,6 +17,10 @@ export interface D3Config {
   opacityScale: number
   removeTags: string[]
   showTags: boolean
+  linkStrength: number
+  collapseforces:boolean
+  lineSizeMultiplier:number
+  close: boolean
 }
 
 interface GraphOptions {
@@ -28,7 +32,7 @@ const defaultOptions: GraphOptions = {
   localGraph: {
     drag: true,
     zoom: true,
-    depth: 1,
+    depth: 2,
     scale: 1.1,
     repelForce: 0.5,
     centerForce: 0.3,
@@ -37,19 +41,24 @@ const defaultOptions: GraphOptions = {
     opacityScale: 1,
     showTags: true,
     removeTags: [],
+    linkStrength:0.1,
   },
   globalGraph: {
     drag: true,
     zoom: true,
     depth: -1,
-    scale: 0.9,
-    repelForce: 0.5,
-    centerForce: 0.3,
-    linkDistance: 30,
-    fontSize: 0.6,
-    opacityScale: 1,
-    showTags: true,
+    scale: 0.6,
+    repelForce: 0.3,
+    centerForce: 0,
+    linkDistance: 100,
+    fontSize: 0.3,
+    opacityScale: 0.5,
+    showTags: false,
     removeTags: [],
+    linkStrength:0.1,
+    collapseforces:false,
+    lineSizeMultiplier:0.8,
+    close: true,
   },
 }
 

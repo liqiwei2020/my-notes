@@ -4,8 +4,7 @@ longform:
   title: Rhino
   workflow: Default Workflow
   sceneFolder: /
-  scenes:
-    - 未命名
+  scenes: []
   sceneTemplate: templates/Chapter.md
   ignoredFiles: []
 ---

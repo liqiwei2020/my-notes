@@ -1,5 +1,5 @@
 ---
-title: "Graph View"
+title: "点状知识图谱"
 tags:
   - component
 ---

@@ -44,7 +44,7 @@ button#explorer {
 
 #explorer-content {
   list-style: none;
-  overflow: hidden;
+  overflow: auto;
   max-height: none;
   transition: max-height 0.35s ease;
   margin-top: 0.5rem;
@@ -113,7 +113,7 @@ svg {
       display: inline-block;
       color: var(--secondary);
       font-weight: $boldWeight;
-      margin: 0;
+      margin: 5;
       line-height: 1.5rem;
       pointer-events: none;
     }
